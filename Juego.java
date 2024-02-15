@@ -20,7 +20,7 @@ public class Juego implements Tablero {
         for(int i=0;i<minas;i++){
            int[] array= creaNumeroAleatorio(x, y);
            
-           tablero[array[0]][array[1]]="Pito";
+           tablero[array[0]][array[1]]="mina";
         }
 
         for(int i=0;i<x;i++){
