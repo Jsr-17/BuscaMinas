@@ -19,9 +19,8 @@ public class Juego implements Tablero {
 
         for(int i=0;i<minas;i++){
            int[] array= creaNumeroAleatorio(x, y);
-           System.out.println(array[i]);
            
-           /*tablero[array[0]][array[1]]="Pito";*/
+           tablero[array[0]][array[1]]="Pito";
         }
 
         for(int i=0;i<x;i++){
@@ -40,18 +39,18 @@ public class Juego implements Tablero {
         switch (txt.toLowerCase()) {
             case "Facil":
             case "facil":
+            this.minas=4;
                 creaTablero(4, 4);
-                minas=4;
             break;
             case "normal":
             case "Normal":
+            minas=12;
             creaTablero(8, 8);
-                minas=12;
             break;
             case "Dificil":
             case "dificil":
+            minas=65;
             creaTablero(14, 14);
-                minas=65;
             break;
 
             default:
