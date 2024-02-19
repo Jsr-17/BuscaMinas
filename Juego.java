@@ -118,3 +118,4 @@ public class Juego implements Tablero {
 
     }
 }
+//El tablero junto a minas y los numeros alrededor de las minas se generan al iniciar el array  y evitar posible duplicacion y reescritura de las minas
